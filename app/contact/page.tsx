@@ -77,7 +77,7 @@ export default function ContactPage() {
               <hr className="border-t border-white/30" />
               <div className="flex items-center space-x-4">
                 <Mail className="w-6 h-6" />
-                <p className="text-lg">support@example.com</p>
+                <p className="text-lg">info@sritsupportservices.co.uk</p>
               </div>
             </div>
           </div>
