@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { ShieldCheck } from "lucide-react"
 
 const faqs = [
   {
@@ -48,51 +49,66 @@ const faqs = [
 
 export default function FAQPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-900">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-[#2B3B6B] to-[#00B4FF]">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
-                Frequently Asked Questions
-              </h1>
-              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
-                Find answers to common questions about our IT support services
-              </p>
-            </div>
+      <section className="relative w-full overflow-hidden">
+        {/* Abstract background */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-800/20 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-cyan-700/10 via-transparent to-transparent" />
+        </div>
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-8 py-16 sm:py-24 lg:py-32">
+          <div className="flex items-center justify-center mb-4">
+            <span className="inline-flex items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/40 p-4 shadow-lg">
+              <ShieldCheck className="w-8 h-8 text-blue-700 dark:text-blue-300" />
+            </span>
+          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg mb-4 tracking-tight">
+            Frequently Asked Questions
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto mb-2 font-medium">
+            Find answers to common questions about our IT support services
+          </p>
+        </div>
+        {/* Soft shadow divider at bottom */}
+        <div className="absolute bottom-0 left-0 w-full h-8 bg-gradient-to-b from-transparent to-slate-50 dark:to-slate-900" />
+      </section>
+
+      {/* FAQ Section */}
+      <section className="w-full py-10 md:py-16 lg:py-20 flex justify-center bg-slate-50 dark:bg-slate-900">
+        <div className="w-full max-w-2xl px-2 sm:px-4">
+          <div className="backdrop-blur-xl bg-white/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-2xl shadow-2xl p-4 sm:p-8">
+            <Accordion type="single" collapsible className="w-full divide-y divide-slate-200 dark:divide-slate-700">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`}
+                  className="py-2">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-slate-800 dark:text-white">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-600 dark:text-slate-300 text-base">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
-          <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
-                <AccordionContent>{faq.answer}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-[#2B3B6B] to-[#00B4FF]">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+      <section className="w-full py-12 md:py-20 lg:py-28 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
+        <div className="w-full flex justify-center px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center w-full max-w-xl mx-auto">
+            <div className="space-y-2 w-full">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-white drop-shadow-lg">
                 Still Have Questions?
               </h2>
-              <p className="mx-auto max-w-[600px] text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="mx-auto max-w-xl text-blue-100 md:text-xl">
                 Our team is here to help. Contact us for personalized assistance.
               </p>
             </div>
-            <div className="w-full max-w-sm space-y-2">
-              <Button asChild className="w-full bg-white text-[#2B3B6B] hover:bg-gray-100">
+            <div className="w-full max-w-xs space-y-2 mx-auto">
+              <Button asChild className="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold text-lg shadow-md">
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
