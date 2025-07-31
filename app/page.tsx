@@ -20,75 +20,75 @@ export default function Home() {
           <div className="flex flex-col gap-10">
             <div className="flex gap-4 flex-col items-start">
               <div>
-                <Badge className="bg-blue-500/10 text-blue-400 border-blue-500/20">Professional Services</Badge>
+                <Badge className="bg-blue-500/10 text-blue-400 border-blue-500/20">Professional IT Services London</Badge>
             </div>
               <div className="flex gap-2 flex-col">
                 <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-bold text-left text-white">
-                  Our IT Services
+                  Leading IT Support Services London
             </h2>
                 <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-gray-300 text-left">
-                  Comprehensive IT solutions tailored to your business needs. From website development to cloud infrastructure, we deliver results that drive growth.
+                  Expert IT support services in London. Professional website development, mobile app development, cloud solutions, and cybersecurity services. Call 02080588503 for free consultation.
                 </p>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+              <article className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
                 <Globe className="w-8 h-8 stroke-1 text-blue-400" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Website Development</h3>
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Website Development London</h3>
                   <p className="text-gray-300 max-w-xs text-base leading-relaxed">
-                    Custom website development with modern technologies including React, Next.js, and responsive design. We create professional, fast-loading websites that convert visitors into customers.
+                    Professional website development services in London. Custom React and Next.js websites with responsive design, SEO optimization, and modern UI/UX. Expert web development company.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">React</span>
-                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">Next.js</span>
-                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">TypeScript</span>
+                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">React Development</span>
+                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">Next.js London</span>
+                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">Web Design</span>
                   </div>
                 </div>
-                  </div>
-              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+                  </article>
+              <article className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
                 <Smartphone className="w-8 h-8 stroke-1 text-green-400" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Mobile App Development</h3>
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Mobile App Development London</h3>
                   <p className="text-gray-300 max-w-xs text-base leading-relaxed">
-                    Native and cross-platform mobile app development for iOS and Android. We build scalable, user-friendly applications with modern frameworks and best practices.
+                    Professional mobile app development in London. iOS and Android app development with React Native and Flutter. Cross-platform mobile applications for businesses.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">React Native</span>
-                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Flutter</span>
-                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">iOS/Android</span>
+                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Flutter Apps</span>
+                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">iOS Android</span>
                   </div>
                 </div>
-                  </div>
+                  </article>
 
-              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+              <article className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
                 <Cloud className="w-8 h-8 stroke-1 text-purple-400" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cloud Solutions</h3>
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cloud Solutions London</h3>
                   <p className="text-gray-300 max-w-xs text-base leading-relaxed">
-                    Comprehensive cloud infrastructure setup and management. We help businesses migrate to the cloud, optimize costs, and ensure high availability and scalability.
+                    Professional cloud solutions in London. AWS and Azure cloud services, Docker containerization, and Kubernetes orchestration. Cloud migration and optimization.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">AWS/Azure</span>
-                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Docker</span>
-                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Kubernetes</span>
+                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">AWS Cloud London</span>
+                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Azure Services</span>
+                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Docker Kubernetes</span>
                   </div>
                 </div>
-              </div>
-              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+              </article>
+              <article className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
                 <Shield className="w-8 h-8 stroke-1 text-red-400" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cybersecurity</h3>
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cybersecurity Services London</h3>
                   <p className="text-gray-300 max-w-xs text-base leading-relaxed">
-                    Comprehensive security solutions including penetration testing, vulnerability assessments, and security infrastructure setup to protect your business assets.
+                    Professional cybersecurity services in London. Penetration testing, security audits, vulnerability assessments, and compliance services. Protect your business with expert security solutions.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Penetration Testing</span>
                     <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Security Audits</span>
-                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Compliance</span>
+                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Cyber Security</span>
                 </div>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -103,13 +103,13 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative">
           <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 text-center">
             <div className="inline-flex items-center rounded-full bg-white px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm text-blue-500 border border-white font-medium backdrop-blur">
-              <span>Ready to Transform?</span>
+              <span>Professional IT Support London</span>
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white max-w-3xl px-4 sm:px-0">
-              Start Your Digital Transformation Journey
+              Leading IT Support Services in London
             </h2>
             <p className="max-w-2xl text-gray-100 text-base sm:text-lg lg:text-xl leading-relaxed px-4 sm:px-0">
-              Join hundreds of successful businesses that trust us with their digital infrastructure and growth.
+              Trusted by hundreds of businesses in London for professional IT support, website development, and digital transformation services. Call 02080588503 for expert IT solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
               <Button 
@@ -118,7 +118,7 @@ export default function Home() {
                 className="bg-white text-slate-900 hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-2xl shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto"
               >
                 <Link href="/contact" className="flex items-center justify-center gap-2 sm:gap-3">
-                  Get Started Today <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
+                  Get Free IT Consultation <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
               <Button 
@@ -129,7 +129,7 @@ export default function Home() {
               >
                 <a href="tel:+442080588503" className="flex items-center justify-center gap-2 sm:gap-3">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                  Call Us Now
+                  Call IT Support London
                 </a>
               </Button>
             </div>
