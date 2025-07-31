@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { Navbar } from "@/components/navbar"
+import { NavbarWrapper } from "@/components/navbar-wrapper"
 import { Footer7 } from "@/components/ui/footer-7"
 import { Toaster } from "@/components/ui/toaster"
 import type React from "react"
@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "SR IT Support Services",
   description: "Professional IT Support Services including SAS Programming, Cloud Solutions, and Technical Consulting",
-  generator: 'v0.dev'
+  generator: 'sr-it-support-services'
 }
 
 const footerLogo = {
@@ -77,7 +77,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
-            <Navbar />
+            <NavbarWrapper />
             <main className="flex-1">{children}</main>
             <Footer7
               logo={footerLogo}

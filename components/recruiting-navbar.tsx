@@ -1,32 +1,32 @@
 "use client"
 
-import * as React from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { useState, useEffect } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
+import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 const menuItems = [
-    { name: 'Services', href: '/services' },
-    { name: 'About Us', href: '/about' },
-    { name: 'FAQ', href: '/faq' },
-    { name: 'Contact', href: '/contact' },
+  { name: "Services", href: "/services" },
+  { name: "About Us", href: "/about" },
+  { name: "FAQ", href: "/faq" },
+  { name: "Contact", href: "/contact" },
 ]
 
-export function Navbar() {
-    const [menuState, setMenuState] = React.useState(false)
-    const [isScrolled, setIsScrolled] = React.useState(false)
-  const pathname = usePathname();
+export function RecruitingNavbar() {
+  const [menuState, setMenuState] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
 
-    React.useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50)
-        }
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, [])
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
         <header>
@@ -100,23 +100,23 @@ export function Navbar() {
                                     variant="outline"
                                     size="sm"
                                     className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="/contact">
-                                        <span>Get Quote</span>
+                                    <Link href="/login">
+                                        <span>Login</span>
                                     </Link>
           </Button>
                                 <Button
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="/contact">
-                                        <span>Contact Us</span>
+                                    <Link href="/signup">
+                                        <span>Sign Up</span>
                                     </Link>
               </Button>
                                 <Button
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                    <Link href="/contact">
+                                    <Link href="/login">
                                         <span>Get Started</span>
                 </Link>
                                 </Button>
@@ -127,4 +127,4 @@ export function Navbar() {
             </nav>
     </header>
     )
-}
+} 

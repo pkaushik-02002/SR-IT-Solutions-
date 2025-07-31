@@ -5,186 +5,127 @@ import Link from "next/link"
 import Image from "next/image"
 import type React from "react"
 import { HeroSection } from "@/components/ui/hero-section"
+import { Badge } from "@/components/ui/badge"
+import WhyChooseUsSection from "@/components/ui/why-choose-us"
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Premium Hero Section */}
-      <HeroSection
-        title="Enterprise IT Solutions"
-        subtitle={{
-          regular: "Transform your business with ",
-          gradient: "cutting-edge technology.",
-        }}
-        description="Comprehensive IT solutions including SAS programming, cloud architecture, cybersecurity, and 24/7 expert support to drive your digital transformation."
-        ctaText="Get Started"
-        ctaHref="/contact"
-        bottomImage={{
-          light: "/Images/technology.png",
-          dark: "/Images/technology.png",
-        }}
-        gridOptions={{
-          angle: 65,
-          opacity: 0.4,
-          cellSize: 50,
-          lightLineColor: "hsl(var(--muted-foreground))",
-          darkLineColor: "hsl(var(--muted))",
-        }}
-      />
+      <HeroSection />
 
       {/* Services Section */}
-      <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-b from-slate-900 to-slate-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-            <div className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 px-6 py-3 text-sm border border-blue-500/20">
-              <span className="text-slate-700 dark:text-slate-300 font-medium">Our Premium Services</span>
+          <div className="flex flex-col gap-10">
+            <div className="flex gap-4 flex-col items-start">
+              <div>
+                <Badge className="bg-blue-500/10 text-blue-400 border-blue-500/20">Enterprise Solutions</Badge>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 dark:text-white max-w-3xl">
-              Enterprise-Grade Solutions
+              <div className="flex gap-2 flex-col">
+                <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-bold text-left text-white">
+                  Our Premium Services
             </h2>
-            <p className="max-w-2xl text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-              We provide cutting-edge IT solutions tailored to your business needs with AI-powered insights and 24/7 expert support.
-            </p>
-          </div>
-          
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <ServiceCard
-              icon={<Code className="h-10 w-10 text-blue-500" />}
-              title="AI-Powered Analytics"
-              description="Advanced SAS programming with machine learning algorithms for predictive analytics and business intelligence."
-            />
-            <ServiceCard
-              icon={<Cloud className="h-10 w-10 text-purple-500" />}
-              title="Cloud Architecture"
-              description="Scalable cloud infrastructure with microservices architecture and automated deployment pipelines."
-            />
-            <ServiceCard
-              icon={<Database className="h-10 w-10 text-green-500" />}
-              title="Data Engineering"
-              description="Modern database design with real-time processing, data lakes, and advanced analytics capabilities."
-            />
-            <ServiceCard
-              icon={<Server className="h-10 w-10 text-orange-500" />}
-              title="DevOps Excellence"
-              description="Complete CI/CD pipelines, infrastructure as code, and automated monitoring solutions."
-            />
-            <ServiceCard
-              icon={<Shield className="h-10 w-10 text-red-500" />}
-              title="Zero-Trust Security"
-              description="Advanced cybersecurity with threat detection, encryption, and compliance frameworks."
-            />
-            <ServiceCard
-              icon={<Check className="h-10 w-10 text-indigo-500" />}
-              title="Managed Services"
-              description="24/7 proactive monitoring, automated maintenance, and expert technical support."
-            />
+                <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-gray-300 text-left">
+                  Comprehensive IT solutions tailored to your business needs with AI-powered insights and 24/7 expert support.
+                </p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+                <Code className="w-8 h-8 stroke-1 text-blue-400" />
+                <div className="flex flex-col">
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">AI-Powered Analytics</h3>
+                  <p className="text-gray-300 max-w-xs text-base leading-relaxed">
+                    Advanced SAS programming with machine learning algorithms for predictive analytics and business intelligence. We provide custom data models, automated reporting, and real-time insights to drive your business decisions.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">SAS Programming</span>
+                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">Machine Learning</span>
+                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">Predictive Analytics</span>
+                  </div>
+                </div>
+                  </div>
+              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+                <Cloud className="w-8 h-8 stroke-1 text-purple-400" />
+                <div className="flex flex-col">
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cloud Architecture</h3>
+                  <p className="text-gray-300 max-w-xs text-base leading-relaxed">
+                    Scalable cloud infrastructure with microservices architecture and automated deployment pipelines. We design, implement, and manage cloud solutions for optimal performance and cost efficiency.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">AWS/Azure</span>
+                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Kubernetes</span>
+                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">CI/CD</span>
+                  </div>
+                </div>
+                  </div>
+
+              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+                <Database className="w-8 h-8 stroke-1 text-green-400" />
+                <div className="flex flex-col">
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Data Engineering</h3>
+                  <p className="text-gray-300 max-w-xs text-base leading-relaxed">
+                    Modern database design with real-time processing, data lakes, and advanced analytics capabilities. We build robust data pipelines and warehouses for seamless data flow and insights.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Data Lakes</span>
+                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">ETL Pipelines</span>
+                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Real-time</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+                <Shield className="w-8 h-8 stroke-1 text-red-400" />
+                <div className="flex flex-col">
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Zero-Trust Security</h3>
+                  <p className="text-gray-300 max-w-xs text-base leading-relaxed">
+                    Advanced cybersecurity with threat detection, encryption, and compliance frameworks for enterprise protection. We implement comprehensive security measures including network security, endpoint protection, and compliance monitoring.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Threat Detection</span>
+                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Encryption</span>
+                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Compliance</span>
+                </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-br from-slate-900 to-slate-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="space-y-8">
-              <div className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 px-6 py-3 text-sm border border-blue-500/20 w-fit">
-                <span className="text-white font-medium">Why Choose Us</span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
-                Trusted by Fortune 500 Companies
-              </h2>
-              <p className="text-xl text-gray-300 leading-relaxed">
-                Our team of certified professionals delivers enterprise-grade solutions that drive digital transformation and business innovation.
-              </p>
-              
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center">
-                    <Check className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-2">Expert Team</h3>
-                    <p className="text-gray-400">Certified professionals with 10+ years of enterprise experience</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
-                    <Check className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-2">24/7 Support</h3>
-                    <p className="text-gray-400">Round-the-clock technical support with SLA guarantees</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl flex items-center justify-center">
-                    <Check className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-2">Custom Solutions</h3>
-                    <p className="text-gray-400">Tailored enterprise solutions for your specific business needs</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="relative">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="space-y-6">
-                  <Card className="p-6 bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/20 rounded-2xl">
-                    <div className="text-4xl font-bold text-white mb-2">500+</div>
-                    <div className="text-sm text-gray-300">Enterprise Clients</div>
-                  </Card>
-                  <Card className="p-6 bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-sm border border-purple-500/20 rounded-2xl">
-                    <div className="text-4xl font-bold text-white mb-2">24/7</div>
-                    <div className="text-sm text-gray-300">Support Available</div>
-                  </Card>
-                </div>
-                <div className="space-y-6 pt-12">
-                  <Card className="p-6 bg-gradient-to-br from-green-500/10 to-blue-500/10 backdrop-blur-sm border border-green-500/20 rounded-2xl">
-                    <div className="text-4xl font-bold text-white mb-2">99.9%</div>
-                    <div className="text-sm text-gray-300">Uptime Guarantee</div>
-                  </Card>
-                  <Card className="p-6 bg-gradient-to-br from-orange-500/10 to-red-500/10 backdrop-blur-sm border border-orange-500/20 rounded-2xl">
-                    <div className="text-4xl font-bold text-white mb-2">15+</div>
-                    <div className="text-sm text-gray-300">Years Experience</div>
-                  </Card>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Why Choose Us Section */}
+      <WhyChooseUsSection />
 
       {/* CTA Section */}
-      <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 relative overflow-hidden">
+      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden animate-gradient">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative">
-          <div className="flex flex-col items-center justify-center space-y-8 text-center">
-            <div className="inline-flex items-center rounded-full bg-white/10 px-6 py-3 text-sm backdrop-blur border border-white/20">
-              <span className="text-white font-medium">Ready to Transform?</span>
+          <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 text-center">
+            <div className="inline-flex items-center rounded-full bg-white px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm text-blue-500 border border-white font-medium backdrop-blur">
+              <span>Ready to Transform?</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white max-w-3xl px-4 sm:px-0">
               Start Your Digital Transformation Journey
             </h2>
-            <p className="max-w-2xl text-gray-100 text-xl leading-relaxed">
+            <p className="max-w-2xl text-gray-100 text-base sm:text-lg lg:text-xl leading-relaxed px-4 sm:px-0">
               Join hundreds of successful businesses that trust us with their digital infrastructure and growth.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-white text-slate-900 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-2xl shadow-2xl hover:scale-105 transition-all duration-300"
+                className="bg-white text-slate-900 hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-2xl shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto"
               >
-                <Link href="/contact" className="flex items-center gap-3">
-                  Get Started Today <ArrowRight className="h-5 w-5" />
+                <Link href="/contact" className="flex items-center justify-center gap-2 sm:gap-3">
+                  Get Started Today <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
               <Button 
                 asChild 
                 size="lg" 
                 variant="outline" 
-                className="border-white/30 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-semibold rounded-2xl transition-all duration-300 hover:scale-105"
+                className="border-white/30 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-slate-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-2xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
               >
                 <Link href="/services">View Solutions</Link>
               </Button>
@@ -200,12 +141,12 @@ function ServiceCard({ icon, title, description }: { icon: React.ReactNode; titl
   return (
     <Card className="group relative overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 rounded-2xl">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      <CardContent className="p-8 relative z-10">
-        <div className="mb-6 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-50 dark:from-slate-700 dark:to-slate-600 p-4 w-fit group-hover:scale-110 transition-transform duration-500 shadow-lg">
+      <CardContent className="p-6 sm:p-8 relative z-10">
+        <div className="mb-4 sm:mb-6 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-50 dark:from-slate-700 dark:to-slate-600 p-3 sm:p-4 w-fit group-hover:scale-110 transition-transform duration-500 shadow-lg">
           {icon}
         </div>
-        <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">{title}</h3>
-        <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">{description}</p>
+        <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-3 sm:mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">{title}</h3>
+        <p className="text-sm sm:text-base lg:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">{description}</p>
       </CardContent>
     </Card>
   )
