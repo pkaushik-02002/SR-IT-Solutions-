@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Check, Code, Cloud, Database, Server, Shield, ArrowRight, Star, Users, Clock, Play, Zap, Target, TrendingUp, Phone } from "lucide-react"
+import { Check, Code, Cloud, Database, Server, Shield, ArrowRight, Star, Users, Clock, Play, Zap, Target, TrendingUp, Globe, Smartphone, Network, Phone } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import type React from "react"
@@ -20,71 +20,71 @@ export default function Home() {
           <div className="flex flex-col gap-10">
             <div className="flex gap-4 flex-col items-start">
               <div>
-                <Badge className="bg-blue-500/10 text-blue-400 border-blue-500/20">Enterprise Solutions</Badge>
+                <Badge className="bg-blue-500/10 text-blue-400 border-blue-500/20">Professional Services</Badge>
             </div>
               <div className="flex gap-2 flex-col">
                 <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-bold text-left text-white">
-                  Our Premium Services
+                  Our IT Services
             </h2>
                 <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-gray-300 text-left">
-                  Comprehensive IT solutions tailored to your business needs with AI-powered insights and 24/7 expert support.
+                  Comprehensive IT solutions tailored to your business needs. From website development to cloud infrastructure, we deliver results that drive growth.
                 </p>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
-                <Code className="w-8 h-8 stroke-1 text-blue-400" />
+                <Globe className="w-8 h-8 stroke-1 text-blue-400" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">AI-Powered Analytics</h3>
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Website Development</h3>
                   <p className="text-gray-300 max-w-xs text-base leading-relaxed">
-                    Advanced SAS programming with machine learning algorithms for predictive analytics and business intelligence. We provide custom data models, automated reporting, and real-time insights to drive your business decisions.
+                    Custom website development with modern technologies including React, Next.js, and responsive design. We create professional, fast-loading websites that convert visitors into customers.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">SAS Programming</span>
-                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">Machine Learning</span>
-                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">Predictive Analytics</span>
+                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">React</span>
+                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">Next.js</span>
+                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">TypeScript</span>
                   </div>
                 </div>
                   </div>
               <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
-                <Cloud className="w-8 h-8 stroke-1 text-purple-400" />
+                <Smartphone className="w-8 h-8 stroke-1 text-green-400" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cloud Architecture</h3>
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Mobile App Development</h3>
                   <p className="text-gray-300 max-w-xs text-base leading-relaxed">
-                    Scalable cloud infrastructure with microservices architecture and automated deployment pipelines. We design, implement, and manage cloud solutions for optimal performance and cost efficiency.
+                    Native and cross-platform mobile app development for iOS and Android. We build scalable, user-friendly applications with modern frameworks and best practices.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">AWS/Azure</span>
-                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Kubernetes</span>
-                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">CI/CD</span>
+                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">React Native</span>
+                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Flutter</span>
+                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">iOS/Android</span>
                   </div>
                 </div>
                   </div>
 
               <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
-                <Database className="w-8 h-8 stroke-1 text-green-400" />
+                <Cloud className="w-8 h-8 stroke-1 text-purple-400" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Data Engineering</h3>
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cloud Solutions</h3>
                   <p className="text-gray-300 max-w-xs text-base leading-relaxed">
-                    Modern database design with real-time processing, data lakes, and advanced analytics capabilities. We build robust data pipelines and warehouses for seamless data flow and insights.
+                    Comprehensive cloud infrastructure setup and management. We help businesses migrate to the cloud, optimize costs, and ensure high availability and scalability.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Data Lakes</span>
-                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">ETL Pipelines</span>
-                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Real-time</span>
+                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">AWS/Azure</span>
+                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Docker</span>
+                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Kubernetes</span>
                   </div>
                 </div>
               </div>
               <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
                 <Shield className="w-8 h-8 stroke-1 text-red-400" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Zero-Trust Security</h3>
+                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cybersecurity</h3>
                   <p className="text-gray-300 max-w-xs text-base leading-relaxed">
-                    Advanced cybersecurity with threat detection, encryption, and compliance frameworks for enterprise protection. We implement comprehensive security measures including network security, endpoint protection, and compliance monitoring.
+                    Comprehensive security solutions including penetration testing, vulnerability assessments, and security infrastructure setup to protect your business assets.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Threat Detection</span>
-                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Encryption</span>
+                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Penetration Testing</span>
+                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Security Audits</span>
                     <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Compliance</span>
                 </div>
                 </div>
