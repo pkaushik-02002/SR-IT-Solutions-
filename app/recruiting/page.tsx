@@ -390,10 +390,10 @@ export default function RecruitingPage() {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold rounded-2xl">
-                  <Link href="/contact" className="flex items-center gap-2">
+                  <a href="tel:+442080588503" className="flex items-center gap-2">
                     <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                    Speak to Expert
-                  </Link>
+                    Call Us Now
+                  </a>
                 </Button>
               </div>
             </div>

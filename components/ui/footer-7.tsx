@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Phone, Mail } from "lucide-react";
 
 interface Footer7Props {
   logo?: {
@@ -100,6 +101,23 @@ export const Footer7 = ({
             <p className="w-full md:max-w-[70%] text-center lg:text-left text-sm text-muted-foreground">
               {description}
             </p>
+            
+            {/* Contact Information */}
+            <div className="flex flex-col gap-3 items-center lg:items-start">
+              <div className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                <Phone className="w-4 h-4" />
+                <a href="tel:+442080588503" className="text-sm font-medium">
+                  +44 (0) 20 8058 8503
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="w-4 h-4" />
+                <a href="mailto:info@sritsupportservices.co.uk" className="text-sm font-medium">
+                  info@sritsupportservices.co.uk
+                </a>
+              </div>
+            </div>
+            
             <ul className="flex justify-center lg:justify-start items-center space-x-4 sm:space-x-6 text-muted-foreground">
               {socialLinks.map((social, idx) => (
                 <li key={idx} className="font-medium hover:text-primary">

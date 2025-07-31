@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Check, Code, Cloud, Database, Server, Shield, ArrowRight, Star, Users, Clock, Play, Zap, Target, TrendingUp } from "lucide-react"
+import { Check, Code, Cloud, Database, Server, Shield, ArrowRight, Star, Users, Clock, Play, Zap, Target, TrendingUp, Phone } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import type React from "react"
@@ -127,7 +127,10 @@ export default function Home() {
                 variant="outline" 
                 className="border-white/30 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-slate-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-2xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
               >
-                <Link href="/services">View Solutions</Link>
+                <a href="tel:+442080588503" className="flex items-center justify-center gap-2 sm:gap-3">
+                  <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+                  Call Us Now
+                </a>
               </Button>
             </div>
           </div>

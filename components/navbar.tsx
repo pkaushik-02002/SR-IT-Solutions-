@@ -116,9 +116,9 @@ export function Navbar() {
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                    <Link href="/contact">
-                                        <span>Get Started</span>
-                </Link>
+                                    <a href="tel:+442080588503">
+                                        <span>Call Us</span>
+                </a>
                                 </Button>
               </div>
               </div>

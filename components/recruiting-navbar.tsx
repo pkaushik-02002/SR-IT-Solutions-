@@ -100,9 +100,9 @@ export function RecruitingNavbar() {
                                     variant="outline"
                                     size="sm"
                                     className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="/login">
-                                        <span>Login</span>
-                                    </Link>
+                                    <a href="tel:+442080588503">
+                                        <span>Call Us</span>
+                                    </a>
           </Button>
                                 <Button
                                     asChild
@@ -116,9 +116,9 @@ export function RecruitingNavbar() {
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                    <Link href="/login">
-                                        <span>Get Started</span>
-                </Link>
+                                    <a href="tel:+442080588503">
+                                        <span>Call Us</span>
+                </a>
                                 </Button>
               </div>
               </div>
