@@ -30,8 +30,14 @@ next-env.d.ts
 %USERPROFILE%/Cache/
 %USERPROFILE%/*.cache
 %USERPROFILE%/.cache/
+%USERPROFILE%/npm-cache-tmp/
+%USERPROFILE%/npm-cache-tmp
 Cache/
 *.cache
 .cache/
 **/Cache/
 **/*.cache
+npm-cache-tmp/
+npm-cache-tmp
+**/npm-cache-tmp/
+**/npm-cache-tmp
