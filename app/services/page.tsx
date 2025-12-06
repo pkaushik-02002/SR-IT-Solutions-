@@ -176,8 +176,8 @@ export default function ServicesPage() {
                         <Clock className="w-6 h-6" />
                       </div>
                     </div>
-                    <div className="text-2xl sm:text-3xl font-bold text-white mb-1">24/7</div>
-                    <div className="text-sm text-gray-400">Support</div>
+                    <div className="text-2xl sm:text-3xl font-bold text-white mb-1">15</div>
+                    <div className="text-sm text-gray-400">Min Response</div>
                   </CardContent>
                 </Card>
               </div>
@@ -353,8 +353,8 @@ export default function ServicesPage() {
                             <Clock className="w-5 h-5 text-orange-400" />
                           </div>
                           <div>
-                            <div className="text-lg font-bold text-white">24/7</div>
-                            <div className="text-xs text-gray-400">Support</div>
+                            <div className="text-lg font-bold text-white">15</div>
+                            <div className="text-xs text-gray-400">Min Response</div>
                           </div>
                         </div>
                       </CardContent>

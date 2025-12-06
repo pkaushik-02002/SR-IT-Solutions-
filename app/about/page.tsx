@@ -47,7 +47,7 @@ const values = [
 const stats = [
   { number: "500+", label: "Projects Completed", icon: <Award className="w-6 h-6" />, color: "blue" },
   { number: "50+", label: "Happy Clients", icon: <Users className="w-6 h-6" />, color: "green" },
-  { number: "24/7", label: "Support Available", icon: <Clock className="w-6 h-6" />, color: "purple" },
+  { number: "15", label: "Min Response", icon: <Clock className="w-6 h-6" />, color: "purple" },
   { number: "99%", label: "Client Satisfaction", icon: <Star className="w-6 h-6" />, color: "orange" },
 ];
 
@@ -210,8 +210,8 @@ export default function AboutUsPage() {
                             <Clock className="w-5 h-5 text-orange-400" />
                           </div>
                           <div>
-                            <div className="text-lg font-bold text-white">24/7</div>
-                            <div className="text-xs text-gray-400">Support</div>
+                            <div className="text-lg font-bold text-white">15</div>
+                            <div className="text-xs text-gray-400">Min Response</div>
                           </div>
                         </div>
                       </CardContent>
@@ -374,8 +374,8 @@ export default function AboutUsPage() {
                             <Clock className="w-5 h-5 text-orange-400" />
                           </div>
                           <div>
-                            <div className="text-lg font-bold text-white">24/7</div>
-                            <div className="text-xs text-gray-400">Support</div>
+                            <div className="text-lg font-bold text-white">15</div>
+                            <div className="text-xs text-gray-400">Min Response</div>
                           </div>
                         </div>
                       </CardContent>

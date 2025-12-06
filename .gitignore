@@ -25,3 +25,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# cache files (including %USERPROFILE% cache files)
+%USERPROFILE%/Cache/
+%USERPROFILE%/*.cache
+%USERPROFILE%/.cache/
+Cache/
+*.cache
+.cache/
+**/Cache/
+**/*.cache

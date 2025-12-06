@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { NavbarWrapper } from "@/components/navbar-wrapper"
 import { Footer7 } from "@/components/ui/footer-7"
 import { Toaster } from "@/components/ui/toaster"
+import CookieBanner from "@/components/cookie-banner"
 import type React from "react"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -163,7 +164,7 @@ const footerLegalLinks = [
   { name: "Privacy Policy", href: "/privacy" },
 ];
 
-const footerDescription = "SR IT SUPPORT SERVICES Private LTD provides comprehensive IT solutions for businesses, including website development, mobile app development, cloud solutions, cybersecurity, and 24/7 support.";
+const footerDescription = "SR IT SUPPORT SERVICES Private LTD provides comprehensive IT solutions for businesses, including website development, mobile app development, cloud solutions, and cybersecurity.";
 const footerCopyright = "© 2024 SR IT SUPPORT SERVICES Private LTD. All rights reserved.";
 
 export default function RootLayout({
@@ -272,6 +273,7 @@ export default function RootLayout({
             />
           </div>
           <Toaster />
+          <CookieBanner />
         </ThemeProvider>
       </body>
     </html>

@@ -15,27 +15,27 @@ export default function Home() {
       <HeroSection />
 
       {/* Services Section */}
-      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-b from-slate-900 to-slate-800">
+      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-b from-background to-muted">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex flex-col gap-10">
             <div className="flex gap-4 flex-col items-start">
               <div>
-                <Badge className="bg-blue-500/10 text-blue-400 border-blue-500/20">Professional IT Services London</Badge>
+                <Badge className="bg-primary/10 text-primary border-primary/20">Professional IT Services London</Badge>
             </div>
               <div className="flex gap-2 flex-col">
-                <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-bold text-left text-white">
+                <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-bold text-left text-foreground">
                   Leading IT Support Services London
             </h2>
-                <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-gray-300 text-left">
+                <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground text-left">
                   Expert IT support services in London. Professional website development, mobile app development, cloud solutions, and cybersecurity services. Call 02080588503 for free consultation.
                 </p>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <article className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
-                <Globe className="w-8 h-8 stroke-1 text-blue-400" />
+              <article className="bg-card/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+                <Globe className="w-8 h-8 stroke-1 text-primary" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Website Development London</h3>
+                  <h3 className="text-xl tracking-tight text-foreground mb-2 font-semibold">Website Development London</h3>
                   <p className="text-gray-300 max-w-xs text-base leading-relaxed">
                     Professional website development services in London. Custom React and Next.js websites with responsive design, SEO optimization, and modern UI/UX. Expert web development company.
                   </p>
@@ -46,7 +46,7 @@ export default function Home() {
                   </div>
                 </div>
                   </article>
-              <article className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+              <article className="bg-card/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
                 <Smartphone className="w-8 h-8 stroke-1 text-green-400" />
                 <div className="flex flex-col">
                   <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Mobile App Development London</h3>
@@ -61,7 +61,7 @@ export default function Home() {
                 </div>
                   </article>
 
-              <article className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+              <article className="bg-card/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
                 <Cloud className="w-8 h-8 stroke-1 text-purple-400" />
                 <div className="flex flex-col">
                   <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cloud Solutions London</h3>
@@ -75,7 +75,7 @@ export default function Home() {
                   </div>
                 </div>
               </article>
-              <article className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+              <article className="bg-card/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
                 <Shield className="w-8 h-8 stroke-1 text-red-400" />
                 <div className="flex flex-col">
                   <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cybersecurity Services London</h3>
@@ -142,7 +142,7 @@ export default function Home() {
 
 function ServiceCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
-    <Card className="group relative overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 rounded-2xl">
+    <Card className="group relative overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 bg-white/50 dark:bg-card/50 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 rounded-2xl">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       <CardContent className="p-6 sm:p-8 relative z-10">
         <div className="mb-4 sm:mb-6 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-50 dark:from-slate-700 dark:to-slate-600 p-3 sm:p-4 w-fit group-hover:scale-110 transition-transform duration-500 shadow-lg">

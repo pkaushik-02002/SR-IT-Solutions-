@@ -201,8 +201,8 @@ export default function ContactPage() {
                         <Clock className="w-6 h-6" />
                       </div>
                     </div>
-                    <div className="text-2xl sm:text-3xl font-bold text-white mb-1">24/7</div>
-                    <div className="text-sm text-gray-400">Support</div>
+                    <div className="text-2xl sm:text-3xl font-bold text-white mb-1">15</div>
+                    <div className="text-sm text-gray-400">Min Response</div>
                   </CardContent>
                 </Card>
               </div>
@@ -316,7 +316,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <div className="text-white font-semibold text-sm">Emergency Support</div>
-                        <div className="text-gray-400 text-xs">24/7 for critical issues</div>
+                        <div className="text-gray-400 text-xs">Business hours for critical issues</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">

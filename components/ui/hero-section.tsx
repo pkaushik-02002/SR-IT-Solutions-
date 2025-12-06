@@ -99,7 +99,7 @@ export function HeroSection() {
                                 </h1>
                                 <p
                                     className="mx-auto mt-6 sm:mt-8 max-w-2xl text-balance text-base sm:text-lg lg:text-xl px-4 sm:px-0">
-                                    Comprehensive IT solutions including SAS programming, cloud architecture, cybersecurity, and 24/7 expert support to drive your digital transformation.
+                                    Comprehensive IT solutions including SAS programming, cloud architecture, cybersecurity, and expert support to drive your digital transformation.
                                 </p>
                             </AnimatedGroup>
 

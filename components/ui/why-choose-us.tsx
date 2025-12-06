@@ -62,13 +62,13 @@ const WhyChooseUsSection: React.FC = () => {
     {
       icon: <Shield className="w-6 h-6" />,
       title: "Enterprise-Grade Security",
-      description: "Advanced cybersecurity measures with 24/7 monitoring, threat detection, and data protection protocols to keep your business safe from evolving digital threats.",
+      description: "Advanced cybersecurity measures with continuous monitoring, threat detection, and data protection protocols to keep your business safe from evolving digital threats.",
       highlight: "ISO Certified"
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "24/7 Rapid Response",
-      description: "Round-the-clock technical support with guaranteed response times. Our expert team ensures minimal downtime and maximum productivity for your operations.",
+      title: "Rapid Response",
+      description: "Fast technical support with guaranteed response times. Our expert team ensures minimal downtime and maximum productivity for your operations.",
       highlight: "< 15 min"
     },
     {
@@ -97,7 +97,7 @@ const WhyChooseUsSection: React.FC = () => {
   const stats = [
     { number: "500", label: "Happy Clients", suffix: "+" },
     { number: "99.9", label: "Uptime Guarantee", suffix: "%" },
-    { number: "24", label: "Hour Support", suffix: "/7" },
+    { number: "15", label: "Min Response", suffix: "" },
     { number: "15", label: "Avg Response Time", suffix: " min" }
   ];
 
