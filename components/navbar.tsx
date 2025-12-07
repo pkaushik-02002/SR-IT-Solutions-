@@ -47,7 +47,7 @@ export function Navbar() {
             height={50}
             className="h-12 w-13"
           />
-          <span className="text-xl font-semibold text-white">SR IT Support</span>
+          <span className="text-xl font-semibold text-foreground">SR IT Support</span>
         </Link>
 
                             <button

@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Plus_Jakarta_Sans, Lora, IBM_Plex_Mono } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { NavbarWrapper } from "@/components/navbar-wrapper"
@@ -8,7 +8,24 @@ import { Toaster } from "@/components/ui/toaster"
 import CookieBanner from "@/components/cookie-banner"
 import type React from "react"
 
-const inter = Inter({ subsets: ["latin"] })
+const plusJakartaSans = Plus_Jakarta_Sans({ 
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap"
+})
+
+const lora = Lora({ 
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap"
+})
+
+const ibmPlexMono = IBM_Plex_Mono({ 
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-mono",
+  display: "swap"
+})
 
 export const metadata: Metadata = {
   title: "SR IT SUPPORT SERVICES Private LTD - Professional IT Solutions & Website Development London",
@@ -173,7 +190,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${plusJakartaSans.variable} ${lora.variable} ${ibmPlexMono.variable}`}>
       <head>
         {/* Structured Data for Organization */}
         <script
@@ -258,8 +275,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+      <body className={`${plusJakartaSans.variable} ${lora.variable} ${ibmPlexMono.variable} font-sans`}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
             <NavbarWrapper />
             <main className="flex-1">{children}</main>

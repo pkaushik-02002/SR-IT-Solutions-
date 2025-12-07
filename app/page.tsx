@@ -32,60 +32,60 @@ export default function Home() {
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <article className="bg-card/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
+              <article className="bg-card/50 backdrop-blur-sm border border-border rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-muted/70 transition-all duration-300">
                 <Globe className="w-8 h-8 stroke-1 text-primary" />
                 <div className="flex flex-col">
                   <h3 className="text-xl tracking-tight text-foreground mb-2 font-semibold">Website Development London</h3>
-                  <p className="text-gray-300 max-w-xs text-base leading-relaxed">
+                  <p className="text-muted-foreground max-w-xs text-base leading-relaxed">
                     Professional website development services in London. Custom React and Next.js websites with responsive design, SEO optimization, and modern UI/UX. Expert web development company.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">React Development</span>
-                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">Next.js London</span>
-                    <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-md">Web Design</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">React Development</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">Next.js London</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">Web Design</span>
                   </div>
                 </div>
                   </article>
-              <article className="bg-card/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
-                <Smartphone className="w-8 h-8 stroke-1 text-green-400" />
+              <article className="bg-card/50 backdrop-blur-sm border border-border rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-muted/70 transition-all duration-300">
+                <Smartphone className="w-8 h-8 stroke-1 text-primary" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Mobile App Development London</h3>
-                  <p className="text-gray-300 max-w-xs text-base leading-relaxed">
+                  <h3 className="text-xl tracking-tight text-foreground mb-2 font-semibold">Mobile App Development London</h3>
+                  <p className="text-muted-foreground max-w-xs text-base leading-relaxed">
                     Professional mobile app development in London. iOS and Android app development with React Native and Flutter. Cross-platform mobile applications for businesses.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">React Native</span>
-                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">Flutter Apps</span>
-                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-md">iOS Android</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">React Native</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">Flutter Apps</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">iOS Android</span>
                   </div>
                 </div>
                   </article>
 
-              <article className="bg-card/50 backdrop-blur-sm border border-slate-700/50 rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
-                <Cloud className="w-8 h-8 stroke-1 text-purple-400" />
+              <article className="bg-card/50 backdrop-blur-sm border border-border rounded-xl aspect-square p-6 flex justify-between flex-col hover:bg-muted/70 transition-all duration-300">
+                <Cloud className="w-8 h-8 stroke-1 text-primary" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cloud Solutions London</h3>
-                  <p className="text-gray-300 max-w-xs text-base leading-relaxed">
+                  <h3 className="text-xl tracking-tight text-foreground mb-2 font-semibold">Cloud Solutions London</h3>
+                  <p className="text-muted-foreground max-w-xs text-base leading-relaxed">
                     Professional cloud solutions in London. AWS and Azure cloud services, Docker containerization, and Kubernetes orchestration. Cloud migration and optimization.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">AWS Cloud London</span>
-                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Azure Services</span>
-                    <span className="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded-md">Docker Kubernetes</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">AWS Cloud London</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">Azure Services</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">Docker Kubernetes</span>
                   </div>
                 </div>
               </article>
-              <article className="bg-card/50 backdrop-blur-sm border border-slate-700/50 rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-slate-800/70 transition-all duration-300">
-                <Shield className="w-8 h-8 stroke-1 text-red-400" />
+              <article className="bg-card/50 backdrop-blur-sm border border-border rounded-xl h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col hover:bg-muted/70 transition-all duration-300">
+                <Shield className="w-8 h-8 stroke-1 text-primary" />
                 <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-white mb-2 font-semibold">Cybersecurity Services London</h3>
-                  <p className="text-gray-300 max-w-xs text-base leading-relaxed">
+                  <h3 className="text-xl tracking-tight text-foreground mb-2 font-semibold">Cybersecurity Services London</h3>
+                  <p className="text-muted-foreground max-w-xs text-base leading-relaxed">
                     Professional cybersecurity services in London. Penetration testing, security audits, vulnerability assessments, and compliance services. Protect your business with expert security solutions.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Penetration Testing</span>
-                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Security Audits</span>
-                    <span className="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded-md">Cyber Security</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">Penetration Testing</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">Security Audits</span>
+                    <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/30 text-xs rounded-md font-medium">Cyber Security</span>
                 </div>
                 </div>
               </article>
@@ -98,24 +98,24 @@ export default function Home() {
       <WhyChooseUsSection />
 
       {/* CTA Section */}
-      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden animate-gradient">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
+      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-primary via-primary/90 to-primary/80 relative overflow-hidden animate-gradient">
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,var(--foreground)_70%,transparent_110%)]" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative">
           <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 text-center">
-            <div className="inline-flex items-center rounded-full bg-white px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm text-blue-500 border border-white font-medium backdrop-blur">
+            <div className="inline-flex items-center rounded-full bg-primary-foreground px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm text-primary border border-primary-foreground font-medium backdrop-blur">
               <span>Professional IT Support London</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white max-w-3xl px-4 sm:px-0">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-primary-foreground max-w-3xl px-4 sm:px-0">
               Leading IT Support Services in London
             </h2>
-            <p className="max-w-2xl text-gray-100 text-base sm:text-lg lg:text-xl leading-relaxed px-4 sm:px-0">
+            <p className="max-w-2xl text-primary-foreground/90 text-base sm:text-lg lg:text-xl leading-relaxed px-4 sm:px-0">
               Trusted by hundreds of businesses in London for professional IT support, website development, and digital transformation services. Call 02080588503 for expert IT solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-white text-slate-900 hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-2xl shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto"
+                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-2xl shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto"
               >
                 <Link href="/contact" className="flex items-center justify-center gap-2 sm:gap-3">
                   Get Free IT Consultation <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
@@ -125,7 +125,7 @@ export default function Home() {
                 asChild 
                 size="lg" 
                 variant="outline" 
-                className="border-white/30 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-slate-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-2xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+                className="border-primary-foreground/30 bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground hover:bg-primary-foreground hover:text-primary px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-2xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
               >
                 <a href="tel:+442080588503" className="flex items-center justify-center gap-2 sm:gap-3">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5" />

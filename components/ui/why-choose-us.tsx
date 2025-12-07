@@ -14,23 +14,23 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, highlight }) => {
   return (
-    <Card className="relative p-6 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+    <Card className="relative p-6 bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <div className="relative z-10">
         <div className="flex items-center gap-4 mb-4">
-          <div className="p-3 rounded-lg bg-blue-500/10 text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+          <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
             {icon}
           </div>
           {highlight && (
-            <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">
+            <Badge className="bg-primary/20 text-primary border-primary/30">
               {highlight}
             </Badge>
           )}
         </div>
-        <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
+        <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
           {title}
         </h3>
-        <p className="text-gray-300 leading-relaxed">
+        <p className="text-muted-foreground leading-relaxed">
           {description}
         </p>
       </div>
@@ -46,11 +46,11 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ number, label, suffix = "" }) => {
   return (
-    <div className="text-center p-6 rounded-lg bg-slate-800/50 backdrop-blur-sm border border-slate-700/50">
-      <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
+    <div className="text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border">
+      <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
         {number}{suffix}
       </div>
-      <div className="text-gray-300 font-medium">
+      <div className="text-muted-foreground font-medium">
         {label}
       </div>
     </div>
@@ -102,18 +102,18 @@ const WhyChooseUsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-slate-900 to-slate-800">
+    <section className="py-20 bg-gradient-to-b from-background to-muted">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+          <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
             Why Choose SR IT Support
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Your Trusted IT Partner for
-            <span className="text-blue-400 block mt-2">Business Excellence</span>
+            <span className="text-primary block mt-2">Business Excellence</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Experience unparalleled IT support services designed to accelerate your business growth. 
             We combine cutting-edge technology with human expertise to deliver solutions that matter.
           </p>
