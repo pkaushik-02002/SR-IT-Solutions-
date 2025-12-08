@@ -176,8 +176,8 @@ export default function ServicesPage() {
                         <Clock className="w-6 h-6" />
                       </div>
                     </div>
-                    <div className="text-2xl sm:text-3xl font-bold text-foreground mb-1">15</div>
-                    <div className="text-sm text-muted-foreground">Min Response</div>
+                    <div className="text-2xl sm:text-3xl font-bold text-foreground mb-1">2</div>
+                    <div className="text-sm text-muted-foreground">Hour Response</div>
                   </CardContent>
                 </Card>
               </div>
@@ -209,7 +209,7 @@ export default function ServicesPage() {
                   <div className="mb-4 sm:mb-6">
                     <div className={`w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg mb-4`}>
                       <div className="[&>svg]:w-full [&>svg]:h-full [&>svg]:text-primary [&>svg]:stroke-2">
-                        {service.icon}
+                      {service.icon}
                       </div>
                     </div>
                     <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3">{service.title}</h3>
@@ -232,8 +232,8 @@ export default function ServicesPage() {
                           }
                           return (
                             <span key={idx} className={badgeClass}>
-                              {feature}
-                            </span>
+                            {feature}
+                          </span>
                           );
                         })}
                       </div>
@@ -369,8 +369,8 @@ export default function ServicesPage() {
                             <Clock className="w-5 h-5 text-primary" />
                           </div>
                           <div>
-                            <div className="text-lg font-bold text-foreground">15</div>
-                            <div className="text-xs text-muted-foreground">Min Response</div>
+                            <div className="text-lg font-bold text-foreground">2</div>
+                            <div className="text-xs text-muted-foreground">Hour Response</div>
                           </div>
                         </div>
                       </CardContent>

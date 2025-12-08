@@ -43,7 +43,7 @@ const values = [
 const stats = [
   { number: "500+", label: "Projects Completed", icon: Award, color: "primary" },
   { number: "50+", label: "Happy Clients", icon: Users, color: "primary" },
-  { number: "15", label: "Min Response", icon: Clock, color: "primary" },
+  { number: "2", label: "Hour Response", icon: Clock, color: "primary" },
   { number: "99%", label: "Client Satisfaction", icon: Star, color: "primary" },
 ];
 
@@ -111,16 +111,16 @@ export default function AboutUsPage() {
                   const IconComponent = stat.icon;
                   return (
                     <Card key={index} className="group relative overflow-hidden bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500">
-                      <CardContent className="p-6 text-center">
-                        <div className="flex justify-center mb-3">
+                    <CardContent className="p-6 text-center">
+                      <div className="flex justify-center mb-3">
                           <div className="p-3 rounded-xl bg-primary/10 text-primary">
                             <IconComponent className="w-6 h-6" />
                           </div>
                         </div>
                         <div className="text-2xl sm:text-3xl font-bold text-foreground mb-1">{stat.number}</div>
                         <div className="text-sm text-muted-foreground">{stat.label}</div>
-                      </CardContent>
-                    </Card>
+                    </CardContent>
+                  </Card>
                   );
                 })}
               </div>
@@ -209,8 +209,8 @@ export default function AboutUsPage() {
                             <Clock className="w-5 h-5 text-primary" />
                           </div>
                           <div>
-                            <div className="text-lg font-bold text-foreground">15</div>
-                            <div className="text-xs text-muted-foreground">Min Response</div>
+                            <div className="text-lg font-bold text-foreground">2</div>
+                            <div className="text-xs text-muted-foreground">Hour Response</div>
                           </div>
                         </div>
                       </CardContent>
@@ -245,16 +245,16 @@ export default function AboutUsPage() {
               
               return (
                 <Card key={index} className="group relative overflow-hidden bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500">
-                  <CardContent className="p-6 sm:p-8 text-center">
-                    <div className="mb-4 sm:mb-6">
+                <CardContent className="p-6 sm:p-8 text-center">
+                  <div className="mb-4 sm:mb-6">
                       <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-primary/10 flex items-center justify-center text-primary shadow-lg mx-auto mb-4">
                         <IconComponent className="w-6 h-6 sm:w-8 sm:h-8" />
-                      </div>
+                    </div>
                       <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3">{value.title}</h3>
                       <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">{value.description}</p>
-                    </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                </CardContent>
+              </Card>
               );
             })}
           </div>
@@ -282,15 +282,15 @@ export default function AboutUsPage() {
               const IconComponent = service.icon;
               return (
                 <Card key={index} className="group relative overflow-hidden bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 text-center">
-                  <CardContent className="p-6 sm:p-8">
-                    <div className="mb-4 flex justify-center">
+                <CardContent className="p-6 sm:p-8">
+                  <div className="mb-4 flex justify-center">
                       <div className="p-3 rounded-xl bg-primary/10 text-primary">
                         <IconComponent className="w-8 h-8" />
                       </div>
                     </div>
                     <h3 className="text-sm sm:text-base font-semibold text-foreground">{service.name}</h3>
-                  </CardContent>
-                </Card>
+                </CardContent>
+              </Card>
               );
             })}
           </div>
@@ -380,8 +380,8 @@ export default function AboutUsPage() {
                             <Clock className="w-5 h-5 text-primary" />
                           </div>
                           <div>
-                            <div className="text-lg font-bold text-foreground">15</div>
-                            <div className="text-xs text-muted-foreground">Min Response</div>
+                            <div className="text-lg font-bold text-foreground">2</div>
+                            <div className="text-xs text-muted-foreground">Hour Response</div>
                           </div>
                         </div>
                       </CardContent>

@@ -108,7 +108,7 @@ export default function Home() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-primary-foreground max-w-3xl px-4 sm:px-0">
               Leading IT Support Services in London
             </h2>
-            <p className="max-w-2xl text-primary-foreground/90 text-base sm:text-lg lg:text-xl leading-relaxed px-4 sm:px-0">
+            <p className="max-w-2xl text-white text-base sm:text-lg lg:text-xl leading-relaxed px-4 sm:px-0">
               Trusted by hundreds of businesses in London for professional IT support, website development, and digital transformation services. Call 02080588503 for expert IT solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">

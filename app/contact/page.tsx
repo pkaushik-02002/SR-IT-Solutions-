@@ -198,8 +198,8 @@ export default function ContactPage() {
                         <Clock className="w-6 h-6" />
                       </div>
                     </div>
-                    <div className="text-2xl sm:text-3xl font-bold text-foreground mb-1">15</div>
-                    <div className="text-sm text-muted-foreground">Min Response</div>
+                    <div className="text-2xl sm:text-3xl font-bold text-foreground mb-1">2</div>
+                    <div className="text-sm text-muted-foreground">Hour Response</div>
                   </CardContent>
                 </Card>
               </div>
@@ -227,29 +227,23 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {contactMethods.map((method, index) => {
               const IconComponent = method.icon;
-              let gradientClass = "from-primary to-primary/80";
-              if (method.color === "secondary") {
-                gradientClass = "from-secondary to-secondary/80";
-              } else if (method.color === "accent") {
-                gradientClass = "from-accent to-accent/80";
-              }
               
               return (
                 <Card key={index} className="group relative overflow-hidden bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500">
-                  <CardContent className="p-6 sm:p-8 text-center">
-                    <div className="mb-4 sm:mb-6">
-                      <div className={`w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br ${gradientClass} flex items-center justify-center text-primary-foreground shadow-lg mx-auto mb-4`}>
+                <CardContent className="p-6 sm:p-8 text-center">
+                  <div className="mb-4 sm:mb-6">
+                      <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-primary/10 flex items-center justify-center text-primary shadow-lg mx-auto mb-4">
                         <IconComponent className="w-6 h-6 sm:w-8 sm:h-8" />
-                      </div>
+                    </div>
                       <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3">{method.title}</h3>
                       <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">{method.description}</p>
-                      <div className="space-y-2">
+                    <div className="space-y-2">
                         <div className="text-lg font-semibold text-foreground">{method.contact}</div>
                         <div className="text-sm text-muted-foreground">Response: {method.response}</div>
-                      </div>
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                </CardContent>
+              </Card>
               );
             })}
           </div>
@@ -278,7 +272,7 @@ export default function ContactPage() {
               <Card className="bg-card/50 backdrop-blur-sm border border-border h-fit">
                 <CardContent className="p-6 sm:p-8">
                   <div className="mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center text-primary-foreground shadow-lg mb-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shadow-lg mb-4">
                       <Clock className="w-6 h-6" />
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-2">Business Hours</h3>
@@ -288,33 +282,29 @@ export default function ContactPage() {
                   <div className="space-y-4">
                     {businessHours.map((schedule, index) => {
                       const IconComponent = schedule.icon;
-                      let gradientClass = "from-primary to-primary/80";
-                      if (schedule.color === "muted") {
-                        gradientClass = "from-muted to-muted/80";
-                      }
                       
                       return (
                         <div key={index} className="group relative overflow-hidden rounded-lg bg-muted/30 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-300 p-4">
-                          <div className="flex items-start justify-between">
-                            <div className="flex items-start gap-3 flex-1">
-                              <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${gradientClass} flex items-center justify-center text-primary-foreground shadow-sm flex-shrink-0`}>
+                        <div className="flex items-start justify-between">
+                          <div className="flex items-start gap-3 flex-1">
+                              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary shadow-sm flex-shrink-0">
                                 <IconComponent className="w-4 h-4" />
-                              </div>
-                              <div className="flex-1 min-w-0">
+                            </div>
+                            <div className="flex-1 min-w-0">
                                 <div className="text-foreground font-semibold text-sm sm:text-base">{schedule.day}</div>
                                 <div className="text-muted-foreground text-xs sm:text-sm">{schedule.hours}</div>
                                 <div className="text-muted-foreground/80 text-xs mt-1">{schedule.description}</div>
-                              </div>
                             </div>
-                            <Badge className={`text-xs font-medium ${
-                              schedule.status === 'Open' 
+                          </div>
+                          <Badge className={`text-xs font-medium ${
+                            schedule.status === 'Open' 
                                 ? 'bg-primary/10 text-primary border-primary/20' 
                                 : 'bg-muted/10 text-muted-foreground border-border'
-                            }`}>
-                              {schedule.status}
-                            </Badge>
-                          </div>
+                          }`}>
+                            {schedule.status}
+                          </Badge>
                         </div>
+                      </div>
                       );
                     })}
                   </div>
@@ -322,7 +312,7 @@ export default function ContactPage() {
                   {/* Additional Info */}
                   <div className="mt-6 pt-6 border-t border-border">
                     <div className="flex items-center gap-3 mb-3">
-                      <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-destructive to-destructive/80 flex items-center justify-center text-destructive-foreground shadow-sm">
+                      <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary shadow-sm">
                         <Shield className="w-4 h-4" />
                       </div>
                       <div>
@@ -331,7 +321,7 @@ export default function ContactPage() {
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center text-primary-foreground shadow-sm">
+                      <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary shadow-sm">
                         <Globe className="w-4 h-4" />
                       </div>
                       <div>

@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "How quickly can you respond to IT issues?",
     answer:
-      "Our team is committed to rapid response times. For critical issues, we aim to respond within 15-30 minutes. For non-critical issues, we typically respond within 2-4 hours. Our support team is available during business hours to address your IT concerns.",
+      "Our team is committed to rapid response times. For critical issues, we aim to respond within 1-2 hours. For non-critical issues, we typically respond within 2-4 hours. Our support team is available during business hours to address your IT concerns.",
     category: "IT Services",
   },
   {

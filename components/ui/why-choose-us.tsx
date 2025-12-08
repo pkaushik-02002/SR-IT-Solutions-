@@ -69,7 +69,7 @@ const WhyChooseUsSection: React.FC = () => {
       icon: <Clock className="w-6 h-6" />,
       title: "Rapid Response",
       description: "Fast technical support with guaranteed response times. Our expert team ensures minimal downtime and maximum productivity for your operations.",
-      highlight: "< 15 min"
+      highlight: "< 2 hours"
     },
     {
       icon: <Users className="w-6 h-6" />,
@@ -97,8 +97,8 @@ const WhyChooseUsSection: React.FC = () => {
   const stats = [
     { number: "500", label: "Happy Clients", suffix: "+" },
     { number: "99.9", label: "Uptime Guarantee", suffix: "%" },
-    { number: "15", label: "Min Response", suffix: "" },
-    { number: "15", label: "Avg Response Time", suffix: " min" }
+    { number: "2", label: "Hour Response", suffix: "" },
+    { number: "2", label: "Avg Response Time", suffix: " hours" }
   ];
 
   return (
