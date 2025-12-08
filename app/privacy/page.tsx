@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { 
   Shield, Eye, Lock, AlertTriangle, CheckCircle, XCircle, Info, 
   ExternalLink, ArrowRight, Database, Users, BarChart3, Target, 
-  Globe, Clock, FileText, Phone, Mail, MapPin, Calendar, Key, Building
+  Globe, Clock, FileText, Phone, Mail, Calendar, Key
 } from "lucide-react";
 import Link from "next/link";
 
@@ -184,49 +184,6 @@ export default function PrivacyPage() {
             <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               This privacy policy explains how we collect, use, and protect your personal data in accordance with the UK General Data Protection Regulation (GDPR) and the Data Protection Act 2018.
             </p>
-          </div>
-
-          {/* Data Controller Information */}
-          <div className="mb-16 sm:mb-20">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Data Controller
-              </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Information about who is responsible for your personal data.
-              </p>
-            </div>
-            
-            <Card className="border border-border bg-card/50 shadow-lg max-w-4xl mx-auto">
-              <CardContent className="p-8">
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center">
-                      <Building className="w-6 h-6 mr-2 text-primary" />
-                      Company Details
-                    </h3>
-                    <div className="space-y-2 text-muted-foreground">
-                      <p><strong className="text-foreground">Name:</strong> SR IT Support Services Private LTD</p>
-                      <p><strong className="text-foreground">Registration:</strong> England and Wales</p>
-                      <p><strong className="text-foreground">ICO Registration:</strong> [Your ICO Number]</p>
-                      <p><strong className="text-foreground">Data Protection Officer:</strong> [DPO Contact]</p>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center">
-                      <MapPin className="w-6 h-6 mr-2 text-primary" />
-                      Contact Information
-                    </h3>
-                    <div className="space-y-2 text-muted-foreground">
-                      <p><strong className="text-foreground">Address:</strong> 123 Business Street, London, SW1A 1AA</p>
-                      <p><strong className="text-foreground">Phone:</strong> 020 8058 8503</p>
-                      <p><strong className="text-foreground">Email:</strong> privacy@sritsupportservices.co.uk</p>
-                      <p><strong className="text-foreground">Website:</strong> www.sritsupportservices.co.uk</p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Data We Collect */}
