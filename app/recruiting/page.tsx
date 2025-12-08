@@ -146,8 +146,8 @@ export default function RecruitingPage() {
                 <div className="text-sm sm:text-base text-muted-foreground font-medium">Successful Placements</div>
               </div>
               <div className="flex flex-col items-center space-y-2">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">24/7</div>
-                <div className="text-sm sm:text-base text-muted-foreground font-medium">Support Available</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">10+</div>
+                <div className="text-sm sm:text-base text-muted-foreground font-medium">Years Experience</div>
               </div>
             </div>
           </div>

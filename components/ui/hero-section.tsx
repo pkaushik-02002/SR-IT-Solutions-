@@ -129,8 +129,8 @@ export function HeroSection() {
                 <div className="text-xs sm:text-sm text-muted-foreground font-medium">Success Rate</div>
               </div>
               <div className="flex flex-col items-center space-y-1">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">24/7</div>
-                <div className="text-xs sm:text-sm text-muted-foreground font-medium">Support</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">10+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground font-medium">Years Experience</div>
               </div>
             </motion.div>
 
