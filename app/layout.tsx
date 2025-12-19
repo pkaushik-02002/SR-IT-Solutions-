@@ -99,9 +99,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
+    google: 'Whz0iMBup9iyzFxvM9zdf-ZWkogHKyqc-2e4rAq2Fwg'
   },
   generator: 'sr-it-support-services',
   icons: {
